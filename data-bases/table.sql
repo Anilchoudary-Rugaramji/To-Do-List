@@ -55,6 +55,26 @@ WHERE id = 4;
 SELECT * FROM todos WHERE user_id=3
 ORDER BY created_at ASC;
 
+-- Q5
+
+ALTER TABLE todos
+ADD due_date DATE;
+
+UPDATE todos 
+SET due_date = '2025-01-15' WHERE id = 1;
+
+UPDATE todos 
+SET due_date = '2025-01-20' WHERE id = 2;
+
+UPDATE todos 
+SET due_date = '2025-01-25' WHERE id = 3;
+
+UPDATE todos 
+SET due_date = '2025-01-18' WHERE id = 4;
+
+UPDATE todos 
+SET due_date = '2025-01-22' WHERE id = 5;
+
 
 
 
