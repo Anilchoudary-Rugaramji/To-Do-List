@@ -45,6 +45,16 @@ INSERT INTO todos (title, user_id, is_completed) VALUES
 SELECT * FROM users;
 SELECT * FROM todos;
 
+-- step 7:  fetch all todos for a specific user, ordered by creation date
+SELECT * FROM todos WHERE id=4;
+
+UPDATE todos
+SET is_completed = 1
+WHERE id = 4;
+
+SELECT * FROM todos WHERE user_id=3
+ORDER BY created_at ASC;
+
 
 
 
